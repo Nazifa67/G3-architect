@@ -5,3 +5,172 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* shared styles */
+/* Header style */
+/* navbar related styles */
+
+.display-flex {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+.brand{
+  font-weight: 700;
+  font-size: 3rem;
+  
+}
+.menu{
+  list-style: none;
+}
+
+.menu-list {
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.section-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.text-primary{
+  color: #FF9900E0;
+}
+/* dark 02 */
+.text-gray{
+  color: #424242;
+}
+
+.text-light-gray{
+  color: #727272;
+}
+
+.bg-color{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.navbar{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.banner{
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.banner-content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.banner-title{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.btn-primary{
+  background-color: #FF9900E0;
+  color: white;
+  padding: 20px 25px;
+  font-size:1.25rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+}
+
+.banner-image img {
+  width: 100%;
+}
+
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main>section{
+  margin-top: 130px;
+}
+
+.team{
+  align-items: center;
+  gap: 73px;
+}
+.team-img{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.features{
+  max-width: 530px;
+  margin-left: 130px;
+}
+#quick-list{
+  font-weight: 500;
+}
+
+.fact-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-description{
+  width:540px;
+}
+.fact{
+  border: 1px solid #FF9900E0;
+  height: 240px;
+  width: 240px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.fact-text{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+/* responsive */
+@media screen and (max-width: 576px){
+  .navbar, .team{
+    flex-direction: column;
+  }
+  .team-img{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .features{
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width:992px) {
+  .team{
+    flex-direction: column;
+  }
+  .features{
+    /* margin-left: 50px; */
+    margin: 20px auto;
+  }
+  
+}
