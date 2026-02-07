@@ -122,9 +122,55 @@ main>section{
   font-weight: 500;
 }
 
+.feat{
+  gap: 140px;
+}
+
+#feat-title{
+  border-left: 5px solid #FF9900E0;
+  padding-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+
+
+.feat-card{
+  padding: 30px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.feat-card .feat-name{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+
+.feat-img{
+  width: 100%;
+}
+
+.year{
+  font-weight: 700;
+  font-size: 4rem;
+}
+
 .fact-container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 .fact-description{
   width:540px;
@@ -150,27 +196,76 @@ main>section{
   font-weight: 600;
   margin-top: 10px;
 }
+
+.sponsor-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.sponsor-companies{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 140px;
+  max-width: 1440px;
+  justify-items: center;
+}
+.sponsor-companies img{
+ filter: grayscale(100%);
+}
+footer{
+  background-color: rgba(255, 244, 231, 1);
+  text-align: center;
+  max-width: 1440px;
+  padding: 38px 400px;
+  margin-top: 130px;
+  margin-bottom: 216px;
+}
 /* responsive */
 @media screen and (max-width: 576px){
-  .navbar, .team{
+  .navbar, .team, .feat{
     flex-direction: column;
   }
-  .team-img{
+  .team-img, .fact-container, .sponsor-companies{
     grid-template-columns: repeat(1, 1fr);
   }
 
   .features{
     margin-left: 20px;
   }
+  .fact-container{
+    justify-items: center;
+    gap: 24px;
+  }
+
+  #badge{
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .image{
+    width: 100%;
+  }
+  .feat-img{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+    padding: 38px 20px;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width:992px) {
-  .team{
+  .team, .feat{
     flex-direction: column;
   }
   .features{
     /* margin-left: 50px; */
     margin: 20px auto;
+  }
+
+  #badge{
+    margin-left: 50px;
+    margin-top: 50px;
   }
   
 }
